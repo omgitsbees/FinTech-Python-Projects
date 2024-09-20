@@ -72,3 +72,57 @@ The performance of the model is evaluated by comparing the actual stock prices t
 Example Output
 The plot below shows the comparison between actual and predicted stock prices.
 ![Screenshot 2024-09-20 113327](https://github.com/user-attachments/assets/babc49e9-9a52-4886-8e3b-a5ddd30262c3)
+
+-------------------------------------------------------------------------------------------------------------------
+
+# Cryptocurrency Portfolio Tracker
+
+A simple and interactive Python application for tracking your cryptocurrency portfolio. This tool allows users to monitor the real-time values of their cryptocurrency holdings, calculate total portfolio value, and track percentage changes over time.
+
+## Features
+
+- **Real-Time Price Updates**: Fetches current cryptocurrency prices using the CoinGecko API.
+- **Portfolio Management**: Track multiple cryptocurrencies and their respective holdings.
+- **Percentage Change Calculation**: Calculates and displays the percentage change in prices over time.
+- **Data Persistence**: Saves portfolio and price data to a JSON file for easy access and tracking.
+- **Graphical User Interface (GUI)**: Built with `tkinter` for a user-friendly experience.
+
+## Requirements
+
+- Python 3.x
+- `requests` library
+- `pandas` library
+- `tkinter` (included with standard Python installations)
+
+## Installation
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/yourusername/cryptocurrency-portfolio-tracker.git
+   cd cryptocurrency-portfolio-tracker
+
+    Install the required libraries:
+
+    bash
+
+pip install requests pandas
+
+Run the application:
+
+bash
+
+    python cryptocurrency_portfolio_tracker.py
+
+Usage
+
+    Initial Setup: Modify the default_portfolio variable in the code to set your initial cryptocurrency holdings.
+    Updating Portfolio: Click the "Update Portfolio" button to fetch the latest prices and update the displayed values.
+    Data View: The application displays the cryptocurrency name, current price, old price, percentage change, amount held, and total value in a table format.
+    Data Persistence: The portfolio data is saved to portfolio_data.json, which allows you to retain your settings across sessions.
+
+API Used
+
+    CoinGecko API
+
+![Screenshot 2024-09-20 120129](https://github.com/user-attachments/assets/d26bad5f-ef85-478d-9568-2c569dee575a)
