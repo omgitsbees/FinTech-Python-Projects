@@ -253,3 +253,66 @@ Next Steps
     Paper Trading: Connect the bot to a paper trading platform to test on live data without risking real money.
 
 ![Screenshot 2024-09-20 123512](https://github.com/user-attachments/assets/589dc2e5-b6f8-4fe4-9865-8616227c1f41)
+
+-------------------------------------------------------------------------------------------------------------------
+
+Credit Scoring System using Logistic Regression
+
+This project simulates a credit scoring system, where a logistic regression model is trained to predict whether a customer will default on a loan based on several features such as income, age, loan amount, and credit history. The project demonstrates how to simulate data, train a logistic regression model, and evaluate its performance using metrics like accuracy, precision, recall, F1-score, and ROC-AUC.
+
+Table of Contents
+
+	•	Overview
+	•	Features
+	•	Data Simulation
+	•	Model Training
+	•	Evaluation
+	•	Installation
+	•	Usage
+	•	Contributing
+	•	License
+
+Overview
+
+Credit scoring is the process of determining the creditworthiness of a borrower by assessing various factors such as income, age, credit history, and loan amount. Logistic regression is a commonly used algorithm for binary classification problems like this one, where the goal is to predict whether or not a customer will default on a loan.
+
+This project simulates customer data, trains a logistic regression model, and evaluates its performance using various evaluation metrics.
+
+Features
+
+	•	Data Simulation: Synthetic data is generated for income, age, loan_amount, and credit_history.
+	•	Logistic Regression: A logistic regression model is trained on the simulated data to predict loan default.
+	•	Model Evaluation:
+	•	Confusion Matrix: Provides a detailed view of True Positives, False Positives, True Negatives, and False Negatives.
+	•	Precision, Recall, and F1-score: To understand the trade-offs between different evaluation metrics.
+	•	ROC-AUC: Measures the model’s ability to distinguish between classes.
+	•	ROC Curve: A visual representation of the True Positive Rate vs. False Positive Rate.
+
+Data Simulation
+
+The dataset is simulated using the following features:
+
+	•	Income: Normally distributed around 50,000 with a standard deviation of 15,000.
+	•	Age: Normally distributed around 40 years with a standard deviation of 10 years.
+	•	Loan Amount: Normally distributed around 15,000 with a standard deviation of 5,000.
+	•	Credit History: Random integers from 0 to 9.
+
+The binary target variable default is generated based on a logistic function applied to these features.
+
+Model Training
+
+The logistic regression model is trained on a subset of the simulated data. The features are standardized, and the data is split into training and testing sets. The model is trained to predict whether a customer will default on their loan (default = 1) or not (default = 0).
+
+Evaluation
+
+After training, the model’s performance is evaluated using:
+
+	•	Accuracy: Measures the overall correctness of the model.
+	•	Confusion Matrix: Shows the distribution of predictions in terms of True Positives, False Positives, True Negatives, and False Negatives.
+	•	Classification Report: Provides precision, recall, and F1-score for each class (default, no default).
+	•	ROC-AUC: The area under the ROC curve, which summarizes the model’s ability to distinguish between the two classes.
+	•	ROC Curve: A plot of the True Positive Rate (TPR) against the False Positive Rate (FPR).
+
+<img width="646" alt="Screenshot 2024-09-21 at 1 13 01 PM" src="https://github.com/user-attachments/assets/26341bc1-19c7-4603-a9c7-381e0751c5ff">
+
+<img width="645" alt="Screenshot 2024-09-21 at 1 13 20 PM" src="https://github.com/user-attachments/assets/cde28209-84af-4d86-b0b8-f4bb54d2a679">
