@@ -316,3 +316,32 @@ After training, the model’s performance is evaluated using:
 <img width="646" alt="Screenshot 2024-09-21 at 1 13 01 PM" src="https://github.com/user-attachments/assets/26341bc1-19c7-4603-a9c7-381e0751c5ff">
 
 <img width="645" alt="Screenshot 2024-09-21 at 1 13 20 PM" src="https://github.com/user-attachments/assets/cde28209-84af-4d86-b0b8-f4bb54d2a679">
+
+-------------------------------------------------------------------------------------------------------------------
+
+Dynamic Pricing Model
+A machine learning-based dynamic pricing model for banking and finance applications.
+
+Overview
+This project implements a dynamic pricing model that uses machine learning algorithms to predict optimal interest rates for loans based on various factors such as customer segment, loan type, collateral type, and market conditions.
+
+Features
+Uses machine learning algorithms (Random Forest, Neural Networks, and ARIMA) to predict optimal interest rates
+Incorporates regulatory requirements (Basel III, Dodd-Frank Act)
+Uses banking-specific data sources (Federal Reserve Economic Data, Bank of International Settlements)
+Includes model interpretability techniques (feature importance, partial dependence plots)
+Requirements
+Python 3.x
+scikit-learn
+pandas
+numpy
+yfinance
+requests
+Usage
+Clone the repository: git clone https://github.com/your-username/Dynamic-Pricing-Model.git
+Install the required packages: pip install -r requirements.txt
+Run the model: python dynamic_pricing_model.py
+Example Use Cases
+Predicting optimal interest rates for loans based on customer segment, loan type, and collateral type
+Analyzing the impact of regulatory requirements on interest rates
+Visualizing the relationships between interest rates and market conditions
