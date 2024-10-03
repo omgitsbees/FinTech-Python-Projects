@@ -397,3 +397,35 @@ This project is licensed under the MIT License. See LICENSE for details.
 
 * Tkinter for the GUI framework
 * SQLite3 for the database
+
+-------------------------------------------------------------------------------------------------------------------
+
+Apple Stock Candlestick Chart
+A Python script that uses the mplfinance library to create a candlestick chart of Apple's stock price history.
+
+Features
+Loads Apple's stock price history from a CSV file
+Creates a candlestick chart using the mplfinance library
+Displays the chart in a Tkinter window
+Requirements
+Python 3.x
+pandas library
+mplfinance library
+tkinter library
+Installation
+Clone the repository: git clone https://github.com/your-username/apple-stock-candlestick-chart.git
+Install the required libraries: pip install pandas mplfinance tkinter
+Run the script: python apple_stock_candlestick_chart.py
+Usage
+Load the CSV file containing Apple's stock price history into the script.
+Run the script to create the candlestick chart.
+The chart will be displayed in a Tkinter window.
+Contributing
+Contributions are welcome! If you'd like to contribute to this project, please fork the repository and submit a pull request.
+
+License
+This project is licensed under the MIT License. See the LICENSE file for more information.
+
+Acknowledgments
+Thanks to the mplfinance library for providing an easy-to-use interface for creating candlestick charts.
+Thanks to the tkinter library for providing a simple way to create GUI windows in Python.
