@@ -452,3 +452,4 @@ Thanks to the mplfinance library for providing an easy-to-use interface for crea
 
 Thanks to the tkinter library for providing a simple way to create GUI windows in Python.
 
+![Screenshot 2024-10-03 142635](https://github.com/user-attachments/assets/8c388590-9f34-4f61-b9be-73811c0efda0)
