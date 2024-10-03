@@ -355,3 +355,45 @@ Predicting optimal interest rates for loans based on customer segment, loan type
 Analyzing the impact of regulatory requirements on interest rates
 Visualizing the relationships between interest rates and market conditions
 
+-------------------------------------------------------------------------------------------------------------------
+
+# Budgeting App
+
+A simple budgeting app built with Python and Tkinter.
+
+## Features
+
+* User registration and login functionality
+* Ability to add transactions, budgets, and investments
+* View budget and investment data
+
+## Requirements
+
+* Python 3.x
+* Tkinter
+* SQLite3
+
+## Installation
+
+1. Clone the repository: `git clone https://github.com/your-username/budgeting-app.git`
+2. Navigate to the project directory: `cd budgeting-app`
+3. Run the app: `python budgeting_app.py`
+
+## Usage
+
+1. Register a new user or login with existing credentials
+2. Add transactions, budgets, and investments
+3. View budget and investment data
+
+## Contributing
+
+Contributions are welcome! Please submit a pull request with your changes.
+
+## License
+
+This project is licensed under the MIT License. See LICENSE for details.
+
+## Acknowledgments
+
+* Tkinter for the GUI framework
+* SQLite3 for the database
