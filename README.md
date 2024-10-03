@@ -546,3 +546,5 @@ This project was built using the following resources:
 scikit-learn documentation: https://scikit-learn.org/stable/
 pandas documentation: https://pandas.pydata.org/docs/
 tkinter documentation: https://docs.python.org/3/library/tk.html
+
+![Screenshot 2024-10-03 145018](https://github.com/user-attachments/assets/b734aba1-52a9-49c3-8c6e-5f31f9a443ff)
