@@ -459,56 +459,88 @@ Thanks to the tkinter library for providing a simple way to create GUI windows i
 -------------------------------------------------------------------------------------------------------------------
 
 Loan Default Prediction
+
 Overview
+
 This project uses machine learning to predict whether a loan will default or not. The model is trained on a dataset of loan information and uses a logistic regression algorithm to make predictions.
 
 Dataset
+
 The dataset used for this project is a CSV file containing information on loans, including:
 
 Loan ID
+
 Age
+
 Income
+
 Loan Amount
+
 Credit Score
+
 Months Employed
+
 Num Credit Lines
+
 Interest Rate
 Loan Term
+
 DTI Ratio
+
 Education
+
 Employment Type
+
 Marital Status
+
 Has Mortgage
+
 Has Dependents
+
 Loan Purpose
+
 Has Co-Signer
+
 Default (target variable)
+
 Model
+
 The model used for this project is a logistic regression model, which is a type of supervised learning algorithm that is well-suited for binary classification problems like this one. The model is trained on the dataset using the scikit-learn library in Python.
 
 Results
+
 The model achieves an accuracy of 88.51% on the test set, with a precision of 0.89 and a recall of 1.00 for non-defaults, and a precision of 0.59 and a recall of 0.03 for defaults. The F1-score for non-defaults is 0.94, while the F1-score for defaults is 0.07.
 
 Code
+
 The code for this project is written in Python and uses the following libraries:
 
 pandas for data manipulation and analysis
+
 scikit-learn for machine learning
+
 tkinter for the GUI
+
 The code is organized into the following files:
 
 loan_default_prediction.py: This file contains the code for the model and the GUI.
+
 data.csv: This file contains the dataset used for the project.
+
 Usage
+
 To use this project, simply clone the repository and run the loan_default_prediction.py file. This will launch the GUI, where you can select a CSV file containing loan information and click the "Predict" button to make predictions.
 
 Contributing
+
 If you'd like to contribute to this project, please fork the repository and submit a pull request. I'd be happy to review your changes and merge them into the main branch.
 
 License
+
 This project is licensed under the MIT License. See the LICENSE file for details.
 
 Acknowledgments
+
 This project was built using the following resources:
 
 scikit-learn documentation: https://scikit-learn.org/stable/
