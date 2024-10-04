@@ -640,3 +640,66 @@ License
 This project is licensed under the MIT License.
 
 -------------------------------------------------------------------------------------------------------------------
+
+Stock Price Simulation Bot
+
+This Python script simulates buying and selling shares of major tech companies based on stock price fluctuations. It uses the yfinance library to fetch real-time stock data, calculates percentage price changes, and performs buy/sell operations depending on certain thresholds.
+Features
+
+    Tracks stock prices of major companies (e.g., AAPL, META, GOOG, MSFT, NVDA, AMZN).
+    Buys shares when the stock price decreases by more than 0.10%.
+    Sells shares when the stock price increases by more than 0.10%.
+    Simulates the trading environment by continuously checking prices every minute.
+
+Prerequisites
+
+Ensure you have the following installed:
+
+    Python 3.x
+    yfinance library
+
+You can install the required yfinance library using pip:
+
+bash
+
+pip install yfinance
+
+How It Works
+
+    The script starts with an initial amount of $10,000 and buys one share of each listed company.
+    It tracks the stock prices every minute.
+    If a stock's price increases by more than 0.10%, the bot sells one share of that stock.
+    If a stock's price decreases by more than 0.10%, the bot buys one additional share (provided there is enough cash).
+    The simulation runs indefinitely, with updates printed to the console each minute.
+
+Stock Symbols
+
+The following stock symbols are being tracked:
+
+    AAPL (Apple)
+    META (Meta)
+    GOOG (Google)
+    MSFT (Microsoft)
+    NVDA (NVIDIA)
+    AMZN (Amazon)
+
+Functions Overview
+
+    get_current_price(symbol): Fetches the latest stock price for a given symbol.
+    calculate_percentage_change(current_price, previous_price): Calculates the percentage change between the current and previous prices.
+    buy_shares(symbol, current_price): Buys a share of the specified stock if conditions are met.
+    sell_shares(symbol, current_price): Sells a share of the specified stock if conditions are met.
+    run_simulation(): Runs the stock tracking and trading simulation, printing results to the console.
+
+Running the Simulation
+
+To run the script, simply execute it using Python:
+
+bash
+
+python stock_simulation.py
+
+The script will fetch stock data and make buy/sell decisions every minute based on the stock price movements.
+License
+
+This project is open-source under the MIT License.
