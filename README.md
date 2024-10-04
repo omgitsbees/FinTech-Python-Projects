@@ -548,3 +548,95 @@ pandas documentation: https://pandas.pydata.org/docs/
 tkinter documentation: https://docs.python.org/3/library/tk.html
 
 ![Screenshot 2024-10-03 145018](https://github.com/user-attachments/assets/b734aba1-52a9-49c3-8c6e-5f31f9a443ff)
+
+-------------------------------------------------------------------------------------------------------------------
+
+Stock Trading Simulation with yFinance and Schedule
+
+This Python project simulates stock trading for a specified stock symbol using real-time price data fetched from Yahoo Finance. The simulation makes automated buy/sell decisions based on pre-defined price thresholds and runs periodically, allowing you to track and simulate the growth or decline of your investment over time.
+Features
+
+    Real-time stock price fetching: Uses yfinance to retrieve the current stock price.
+    Automated buy/sell decisions: Buys when the price drops by a set percentage and sells when the price increases by another set percentage.
+    Continuous simulation: The simulation runs every minute using the schedule library.
+    Portfolio management: Keeps track of the amount of money and the number of shares owned.
+    Plotting: Uses plotly.graph_objects for visualizing data (placeholder for future implementation).
+
+Requirements
+
+    Python 3.x
+    Required libraries:
+        yfinance
+        schedule
+        plotly
+
+You can install the dependencies by running:
+
+bash
+
+pip install yfinance schedule plotly
+
+How it Works
+
+    Initial Setup: The simulation starts with a fixed amount of money (e.g., $10,000) and no shares of the stock.
+    Stock Price Fetching: The script fetches the real-time stock price for the specified stock symbol (default: AAPL).
+    Buy/Sell Logic:
+        Buy when the price drops by 5% from the previous fetched price.
+        Sell when the price increases by 10% from the previous fetched price.
+        Hold if neither condition is met.
+    Continuous Execution: The simulation checks the stock price every minute and updates your portfolio accordingly.
+
+Code Overview
+
+python
+
+import yfinance as yf
+import schedule
+import time
+import plotly.graph_objects as go
+
+Parameters:
+
+    initial_amount: The starting money for the simulation (default: $10,000).
+    stock_symbol: The stock symbol to track (default: 'AAPL').
+    buy_threshold: Percentage drop in price to trigger a buy (default: 5%).
+    sell_threshold: Percentage increase in price to trigger a sell (default: 10%).
+
+Key Functions:
+
+    get_current_price(): Fetches the real-time stock price using yfinance.
+    make_decision(current_price, previous_price): Decides whether to buy, sell, or hold based on current and previous stock prices.
+    StockSimulation: The class that manages the portfolio and simulates stock trades.
+
+Running the Simulation:
+
+The simulation is scheduled to run every minute using the schedule library. It continuously updates based on the latest stock price.
+
+python
+
+while True:
+    schedule.run_pending()
+    time.sleep(1)
+
+Running the Project
+
+    Clone this repository or download the script.
+    Install the required libraries using pip.
+    Run the script:
+
+bash
+
+python stock_simulation.py
+
+The script will start running, fetching the stock price every minute and making buy/sell decisions based on the defined thresholds.
+Future Improvements
+
+    Data visualization: Implement real-time stock price and portfolio value plotting using plotly.
+    More advanced strategies: Introduce more complex trading strategies, such as using moving averages or other technical indicators.
+    Multiple stocks: Expand the simulation to track and trade multiple stocks simultaneously.
+
+License
+
+This project is licensed under the MIT License.
+
+-------------------------------------------------------------------------------------------------------------------
